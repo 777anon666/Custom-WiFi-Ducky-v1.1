@@ -88,7 +88,7 @@ What you will need:
   I recommend using an ESP-12. It's widely used, cheap, tiny and has 4MB of flash memory.  
   However if you're a beginner you should probably start with a developer board like the NodeMCU or a Wemos d1 mini.  
 - **ATmega32u4**  
-  The Arduino Micro and Arduino Leonardo use an ATmega32u4 for example. You could also get a Arduino Pro Micro or other cheap Arduino clones which use the ATmega32u4. I will use an [ATmega32u4 CJMCU Beetle](https://www.google.de/search?q=Cjmcu-beetle&tbm=isch).  
+  The Arduino Micro and Arduino Leonardo use an ATmega32u4 for example. You could also get a Arduino Pro Micro or other cheap Arduino clones which use the ATmega32u4. I will use an [ATmega32u4 / WHID cactus](https://www.tindie.com/products/aprbrother/cactus-whid-wifi-hid-injector-usb-rubberducky).  
 - **(a 3.3V regulator)**  
   I put that in brackets because you will only need this if your ATMega32u4 board doesn't provide 3.3V. The ESP8266 only works with 3.3V, so depending on your board you may need a regulator to get 3.3V out of the 5V.  
 - **Some skill, knowledge and common sense on this topic**  
