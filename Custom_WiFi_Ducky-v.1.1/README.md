@@ -3,6 +3,10 @@ Upload, save and run keystroke injections remotely with an ESP8266 + ATmega32u4 
 
 ![image of Custom WiFi Ducky Live Execution Page](https://github.com/777anon666/Custom-WiFi-Ducky-v1.1/blob/master/Custom_WiFi_Ducky-v.1.1/images/Live_Execute_Page.jpg)
 
+![image of Custom WiFi Ducky Live Execution Page Beginning_of_cheat_sheet](https://github.com/777anon666/Custom-WiFi-Ducky-v1.1/blob/master/Custom_WiFi_Ducky-v.1.1/images/Live_Execute_Page_Beginning_of_cheat_sheet.jpg)
+
+
+
 ## Contents
 - [Introduction](#introduction)
   - [What it is](#what-it-is)
