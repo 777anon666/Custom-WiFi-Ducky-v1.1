@@ -1,7 +1,12 @@
-# Custom Version of WiFi Ducky v1.1
+# Custom Version of WiFi Ducky v1.1 (Customized By 777anon666@protonmail.com)
+
+# Live Execution Page
 Upload, save and run keystroke injections remotely with an ESP8266 + ATmega32u4 (I used a WHID Cactus for this firmware)
 
 ![image of Custom WiFi Ducky Live Execution Page](https://github.com/777anon666/Custom-WiFi-Ducky-v1.1/blob/master/Custom_WiFi_Ducky-v.1.1/images/Live_Execute_Page_screenshot.jpg)
+
+# Info Page
+![image of Custom WiFi Ducky Info Page](https://github.com/777anon666/Custom-WiFi-Ducky-v1.1/blob/master/Custom_WiFi_Ducky-v.1.1/images/custom_WiFi_Ducky_Info_page.jpg)
 
 
 
