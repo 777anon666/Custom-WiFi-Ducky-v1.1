@@ -75,8 +75,9 @@ I don't take any responsibility for what you do with this project.
 ## Installation
 
 ### Short version:
-Upload the `arduino_wifi_duck` sketch to your ATmega32u4 and upload the `esp8266_wifi_duck` sketch to your ESP8266.  
-Then connect the serial pins (RX and TX (Arduino) to TX and RX (ESP8266)) and GND.
+Upload the `arduino_Custom_wifi_ducky_v1.1.ino` sketch From the arduino_wifi_duck Folder using Arduino to your ATmega32u4 and Flash the `esp8266_custom_wifi_ducky_v1.1_4m.ino.generic.bin` From the esp8266_wifi_duck Folder to your ESP8266 using nodemcu-flasher or 
+upload the `esp8266_wifi_duck.ino` sketch From the esp8266_wifi_duck Folder using Arduino to your ESP8266.
+
 
 ---
 
