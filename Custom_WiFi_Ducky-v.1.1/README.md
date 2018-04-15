@@ -94,31 +94,10 @@ What you will need:
 - **Some skill, knowledge and common sense on this topic**  
   That's probably the most important part here. **This project is not noob friendly!** If you are a beginner, please start with other projects and get some knowledge about how Arduino and its code works, how to handle errors and how to work with the ESP8266. **I can't cover every little detail here. Please respect that.** Depending on your hardware choices you may need to add or change a bit of the Arduino code.  
 
-So make your hardware choices!  
-Also I wouldn't go straight forward and solder everything together. Test it beforehand, otherwise debugging can be hard!
-
-**For an easy start, better debugging, further development or if you just wanna test this project, I recommend using a Nodemcu + an Arduino Leonardo:**
-![nodemcu with a leonardo as wifi duck](https://raw.githubusercontent.com/spacehuhn/wifi_ducky/master/images/leonardo_duck_1.jpg)
-This is easy to setup, you don't need any soldering skills and you can still use both the NodeMCU and the Arduino for other cool projects.
-
-
-But now let's get started!  
-
 ### ESP8266
 
 First you will need to flash your ESP8266.  
 You can either flash the bin file directly or compile it yourself using Arduino.  
-
-**Note:** You will only need to flash it once, every new update can then be done over the webinterface.
-
-If don't use a USB dev board and don't know how to flash your plain ESP8266, I recommend you to have a look at this instructable: http://www.instructables.com/id/Getting-Started-with-the-ESP8266-ESP-12/?ALLSTEPS
-
-You could also use your Arduino to flash it: https://gist.github.com/spacehuhn/b2b7d897550bc07b26da8464fa7f4b36
-(The connections are the same for this project, the only difference is that you need to set GPIO-0 to LOW to enabling a firmware update).
-
-**Flash the .bin File**  
-Go to [releases](https://github.com/spacehuhn/wifi_ducky/releases) and download the right bin file for your ESP8266.  
-You can flash it with the [esptool](https://github.com/espressif/esptool) or the [nodemcu-flasher](https://github.com/nodemcu/nodemcu-flasher).
 
 **Upload using Arduino**  
 Open the `esp8266_wifi_duck` sketch with [Arduino](https://www.arduino.cc/en/Main/Software).
@@ -131,29 +110,7 @@ Then compile and upload it to your ESP8266 (check if your settings are right).
 
 ### Arduino ATmega32u4
 
-Open the `arduino_wifi_duck` sketch in Arduino and upload it to your Arduino.  
-
-### Wire everything up
-
-Ok so now you need to connect the ESP8266 with the Arduino.  
-Connect these pins:
-
-| Arduino       | ESP82666      |
-| ------------- |:-------------:|
-| TX            | RX            |
-| RX            | TX            |
-| GND           | GND           |
-| VCC (3.3V)    | VCC (3.3V)    |
-
-Like I mentioned before, you'll need a 3.3V regulator if your Arduino only provides 5V.  
-**Don't connect the ESP8266 to 5V!**  
-
-If you use a plain ESP-12 like me, you also have to set the enable pin and to HIGH and GPIO15 to LOW:
-
-| PIN          | Mode       |
-| ------------ |:----------:|
-| GPIO15       | LOW (GND)  |
-| CH_PD (EN)   | HIGH (3.3V)|
+Open the `arduino_wifi_duck` sketch in Arduino and upload it to your ATmega32u4 "or" Arduino Based Board.  
 
 
 ### Update ESP8266 over the Webinterface
@@ -180,13 +137,9 @@ Happy hacking :)
 
 ## Improvements
 
-My wishlist:
-- add support for Digispark (ATtiny85) as alternative for the ATmega32u4 Arduino
-- change settings within the webinterface (Wi-Fi SSID, password etc.)
+- change settings within the webinterface (Wi-Fi SSID, password etc.) Settings page dont work you have to compile the settings you want/need in the Arduino sketch then upload it
 - full support of all Ducky Script commands (DEFAULTDELAY is missing)
-- auto execute scripts
-- add mouse
-- control over the internet
+- auto execute scripts settings page dont work for some reason... so just edit the autostart.txt with the script you want to auto execute if you dont want a script to auto execute just delete all the text from the autostart.txt and save it 
 
 ## License
 
@@ -196,8 +149,8 @@ This project is licensed under the MIT License - see the [license file](LICENSE)
 
 The USB Rubber Ducky: https://hakshop.com/products/usb-rubber-ducky-deluxe
 
-The Malduino (a BadUSB-Arduino/Rubber-Ducky-alternative by Seytonic): https://www.indiegogo.com/projects/malduino-badusb-arduino-usb#/
-
+The Malduino: (a BadUSB-Arduino/Rubber-Ducky-alternative by Seytonic): https://www.indiegogo.com/projects/malduino-badusb-arduino-usb#/
+WHID Cactus: https://www.tindie.com/products/aprbrother/cactus-whid-wifi-hid-injector-usb-rubberducky/
 Seytonic: http://youtube.com/seytonic
           https://github.com/seytonic
 
