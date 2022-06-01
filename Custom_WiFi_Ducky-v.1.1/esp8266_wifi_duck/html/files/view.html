@@ -58,16 +58,16 @@
 			var canEdit = false;
 			
 			function getScript(){
-				document.getElementById("scriptName").innerHTML = scriptName;
+				document.getElementById("scriptName").innerText = scriptName;
 				getResponse("script?name="+scriptName,function(responseText){
 					document.getElementById("scriptTextArea").value = responseText;
 					count();
 					if(responseText.length > 1024){
-						document.getElementById("saveInfo").innerHTML = "Script too large to edit.";
+						document.getElementById("saveInfo").innerText = "Script too large to edit.";
 						document.getElementById("scriptTextArea").readOnly = true;
 					}
 					else{
-						document.getElementById("saveInfo").innerHTML = '<button onclick="save()" class="button-primary">save</button>';
+						document.getElementById("saveInfo").innerText = '<button onclick="save()" class="button-primary">save</button>';
 						canEdit = true;
 					}
 				});
@@ -77,9 +77,9 @@
 			
 			function count(){
 				var length = document.getElementById("scriptTextArea").value.length;
-				document.getElementById("charCount").innerHTML = length;
-				if(length >= 1024) document.getElementById("saveInfo").innerHTML = "Script too large to edit.";
-				else document.getElementById("saveInfo").innerHTML = '<button onclick="save()" class="button-primary">save</button>';
+				document.getElementById("charCount").innerText = length;
+				if(length >= 1024) document.getElementById("saveInfo").innerText = "Script too large to edit.";
+				else document.getElementById("saveInfo").innerText = '<button onclick="save()" class="button-primary">save</button>';
 			}
 			
 			function del(){
